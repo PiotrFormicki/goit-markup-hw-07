@@ -1,0 +1,113 @@
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 24px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    text-decoration: none;
+    color: $black;
+    font-family: $fontTypeRaleway;
+    font-weight: $boldFontWeight;
+    &--highlight {
+      color: $blue;
+    }
+  }
+  &__right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    font-size: $contactFontSize;
+    line-height: 1.14;
+    font-weight: 500;
+    margin-left: 93px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__link {
+    transition: color 250ms;
+    transition-timing-function: $transitionTiming;
+    color: $lightBlack;
+    font-size: $contactFontSize;
+    text-decoration: none;
+    &:not(:first-child) {
+      padding-left: 46px;
+    }
+    &:hover {
+      color: $blue;
+    }
+    &--on {
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      color: $lightBlack;
+      font-size: $contactFontSize;
+      text-decoration: none;
+      &::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "";
+        position: absolute;
+        top: 77px;
+        width: 53px;
+        height: 4px;
+        background-color: $blue;
+        border-radius: 2px;
+      }
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &__data {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+  }
+
+  &__contact {
+    font-family: $fontTypeRoboto;
+    text-decoration: $globalTextDecoration;
+    color: $grey;
+    font-size: $contactFontSize;
+    line-height: 1.14;
+    align-items: center;
+    display: flex;
+    fill: $grey;
+    transition: color 250ms;
+    transition-timing-function: $transitionTiming;
+    &:hover {
+      color: $blue;
+      fill: $blue;
+    }
+    &:focus {
+      color: $blue;
+      fill: $blue;
+    }
+    &:last-child {
+      padding-left: 30px;
+    }
+  }
+  &__svg {
+    margin-right: 10px;
+  }
+}

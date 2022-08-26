@@ -1,0 +1,255 @@
+.main {
+  &__text {
+    text-align: center;
+    max-width: 696px;
+    margin: $marginAuto;
+    color: $white;
+    font-family: $fontTypeRoboto;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    padding-top: 200px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    background-color: $white;
+    border: none;
+    font-family: $fontTypeRoboto;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 250ms;
+    transition-timing-function: $transitionTiming;
+    background-color: $blue;
+    color: $white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: $marginAuto;
+    margin-top: 30px;
+    &:hover {
+      background-color: $blue;
+      border: none;
+      color: $white;
+      box-shadow: 0px 2px 2px 0px #0000001f;
+
+      box-shadow: 0px 1px 2px 0px #00000014;
+
+      box-shadow: 0px 3px 1px 0px #0000001a;
+      background-color: $white;
+      color: $blue;
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+    }
+  }
+
+  &__lorem-list {
+    display: flex;
+  }
+  &__lorem-item {
+    display: flex;
+    background-color: $lightGrey;
+    height: 120px;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  &__lorem-list-description {
+    display: flex;
+  }
+  &__lorem-list-item {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  &__header {
+    color: #212121;
+    font-size: 14px;
+    line-height: 1.17;
+    font-family: $fontTypeRoboto;
+    font-weight: 700;
+  }
+  &__description {
+    font-family: $fontTypeRoboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: $letterspacing03;
+    text-align: left;
+    color: $grey;
+    padding-top: 10px;
+    display: flex;
+  }
+  &__about {
+    font-family: $fontTypeRoboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__services-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__services-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    height: 70px;
+    background-color: $deepGrey;
+    color: $white;
+  }
+
+  &__team {
+    padding-top: 94px;
+  }
+  &__team-block {
+    background-color: $lightGrey;
+  }
+
+  &__team-header {
+    font-family: $fontTypeRoboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  &__team-list {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+  }
+
+  &__team-list-item {
+    display: flex;
+  }
+
+  &__figure {
+    padding: 0px;
+    width: 270px;
+    height: 428px;
+    background-color: $white;
+    padding-bottom: 150px;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001f;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: transform 250ms;
+    transition-timing-function: $transitionTiming;
+    &:hover {
+      box-shadow: 1px 4px 6px 0px #00000029;
+
+      box-shadow: 0px 4px 4px 0px #0000000f;
+
+      box-shadow: 0px 1px 1px 0px #0000001f;
+      transform: scale(1.01);
+    }
+  }
+
+  &__name {
+    color: $black;
+    font-family: $fontTypeRoboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  &__specialty {
+    color: $grey;
+    font-family: $fontTypeRoboto;
+    font-size: 16px;
+    line-height: 1.17;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  &__second-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 16px;
+  }
+  &__icons {
+    fill: $iconFillGrey;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 250ms;
+    transition: background-color 250ms;
+    transition-timing-function: $transitionTiming;
+    &:hover {
+      background-color: $blue;
+      fill: $white;
+    }
+  }
+
+  &__clients-header {
+    margin: $marginAuto;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: $fontTypeRoboto;
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+  }
+  &__clients-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__clients-list-item {
+    width: 170px;
+    height: 92px;
+    fill: $iconFillGrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $iconFillGrey;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 250ms;
+    transition-timing-function: $transitionTiming;
+    &:hover {
+      fill: $blue;
+      border: 1px solid $blue;
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      transform: scale(1.01);
+    }
+  }
+}

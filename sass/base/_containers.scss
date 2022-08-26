@@ -1,0 +1,17 @@
+.container {
+  width: 1170px;
+  margin: $marginAuto;
+  align-items: center;
+}
+
+.footer__container {
+  margin: $marginAuto;
+  width: 1170px;
+  display: flex;
+}
+
+.container-header {
+  width: $containerWidth;
+  margin: $marginAuto;
+  display: flex;
+}

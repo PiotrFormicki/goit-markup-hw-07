@@ -1,0 +1,172 @@
+.footer {
+  background-color: $veryGrey;
+  text-decoration: none;
+  &__header {
+    margin-top: 60px;
+  }
+
+  &__address {
+    font-family: $fontTypeRoboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-emphasis-style: none;
+    color: $white;
+  }
+
+  &__contact {
+    display: list-item;
+    padding-top: 9px;
+    font-family: $fontTypeRoboto;
+    text-decoration: none;
+    color: $grey;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+    &:last-child {
+      padding-bottom: 60px;
+    }
+    &:focus {
+      color: $blue;
+    }
+    &:hover {
+      color: $blue;
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+    }
+  }
+
+  &__web {
+    font-family: $fontTypeRaleway;
+    color: $white;
+    text-decoration: none;
+  }
+  &__highlight {
+    color: $blue;
+    font-family: $fontTypeRaleway;
+  }
+  &__socials {
+    margin-left: 70px;
+    align-items: center;
+    padding-top: 72px;
+    display: block;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: $fontTypeRoboto;
+    line-height: 1.14;
+    color: $white;
+    letter-spacing: $letterspacing03;
+  }
+  &__list {
+    padding-top: 20px;
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms;
+    transition-timing-function: $transitionTiming;
+    &:hover {
+      background-color: $blue;
+      transition: background-color 250ms;
+      transition-timing-function: $transitionTiming;
+    }
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__registration {
+    margin-top: 72px;
+    margin-left: 78px;
+    font-family: $fontTypeRoboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: $letterspacing03;
+    text-align: left;
+    color: $white;
+  }
+
+  &__newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 78px;
+  }
+
+  &__label {
+    font-family: $fontTypeRoboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: $letterspacing03;
+    text-align: left;
+    color: $white;
+    width: 358px;
+    height: 50px;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    background-color: $deepGrey;
+    border: 1px solid #ffffff4d;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    border-radius: 4px;
+    padding-left: 16px;
+    font-size: 16px;
+    font-family: $fontTypeRoboto;
+    line-height: 1.25;
+    letter-spacing: $letterspacing03;
+    color: $white;
+    transition: color 250ms;
+    &:focus {
+      transition: border-color 250ms, color 250ms;
+      transition-timing-function: $transitionTiming;
+      border-color: $blue;
+      outline: none;
+    }
+  }
+  &__submit {
+    font-family: $fontTypeRoboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    background-color: $blue;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    transition: transform 0.001s linear;
+    padding-left: 42px;
+    margin-left: 12px;
+    color: $white;
+    &:active,
+    &:hover {
+      filter: brightness(0.95);
+      transform: scale(1.01);
+    }
+  }
+  &__svg {
+    position: relative;
+    display: flex;
+    fill: $white;
+    left: 24px;
+  }
+}
